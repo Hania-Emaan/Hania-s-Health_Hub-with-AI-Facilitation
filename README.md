@@ -454,16 +454,16 @@ hanias_health_hub/
 ├── reports/
 │   └── daily_collection.php
 ├── screenshots/
-│   ├── AI_report_chat.png
-│   ├── billing.png
-│   ├── dashboard.png
-│   ├── doctor_visit.png
-│   ├── edit_patient_details.png
-│   ├── lab_tests.png
-│   ├── patient_list.png
-│   ├── register_patient.png
-│   ├── reports.png
-│   └── view_patient_details.png
+│   ├── AI_report_chat.PNG
+│   ├── billing.PNG
+│   ├── dashboard.PNG
+│   ├── doctor_visit.PNG
+│   ├── edit_patient_details.PNG
+│   ├── lab_tests.PNG
+│   ├── patient_list.PNG
+│   ├── register_patient.PNG
+│   ├── reports.PNG
+│   └── view_patient_details.PNG
 └── server/
     └── ask_ai.php
 
