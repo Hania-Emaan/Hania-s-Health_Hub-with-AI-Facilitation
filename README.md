@@ -2,10 +2,6 @@
 
 A database-driven hospital management system built with **PHP, MySQL, XAMPP, and Node.js**, featuring patient management, doctor visits, laboratory orders, billing, reports, and a ChatterMate-powered AI report assistant.
 
-> **Academic/demo project:** This application uses fictional data only. Do not use it with real patient, hospital, or staff information without adding appropriate security, privacy, and compliance controls.
-
----
-
 ## Contents
 
 - [Overview](#overview)
