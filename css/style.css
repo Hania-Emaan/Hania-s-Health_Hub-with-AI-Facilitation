@@ -1,0 +1,152 @@
+/* css/style.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc; /* Light background for the whole page */
+    color: #1a202c; /* Dark text for readability */
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb; /* Primary blue for links */
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1d4ed8; /* Darker blue on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding on the sides */
+}
+
+/* Utility for table responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 600px; /* Ensure table has a minimum width before scrolling */
+}
+
+th, td {
+    border: 1px solid #cbd5e0; /* Light gray borders */
+    padding: 12px 15px;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping in cells */
+}
+
+th {
+    background-color: #e2e8f0; /* Light gray header background */
+    font-weight: 600;
+    color: #4a5568; /* Darker gray for header text */
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #edf2f7; /* Light hover effect */
+}
+
+.action-buttons a {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.action-buttons .view-btn {
+    background-color: #2563eb; /* Primary blue */
+    color: white;
+}
+.action-buttons .view-btn:hover {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+.action-buttons .edit-btn {
+    background-color: #f59e0b; /* Amber for edit */
+    color: white;
+}
+.action-buttons .edit-btn:hover {
+    background-color: #d97706;
+    color: white;
+}
+
+.action-buttons .delete-btn {
+    background-color: #e53e3e; /* Red for delete */
+    color: white;
+}
+.action-buttons .delete-btn:hover {
+    background-color: #c53030;
+    color: white;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Page Title Styling */
+.page-title {
+    color: #2563eb; /* Primary blue for titles */
+    font-size: 2em; /* Larger font size */
+    font-weight: 700;
+    margin-top: 20px; /* Space above title */
+    margin-bottom: 10px; /* Space below title */
+    text-align: center; /* Center the title */
+}
+
+/* Adjust specific titles if needed */
+h1.page-title { font-size: 2.2em; } /* For dashboard and potentially patient list if used there */
+h2.page-title { font-size: 2em; } /* For edit/details pages */
+
+/* Responsive adjustments for titles */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.8em;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    h1.page-title { font-size: 2em; }
+    h2.page-title { font-size: 1.8em; }
+}
+
+/* Responsive adjustments for tables and general layout */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px; /* Smaller padding on mobile */
+        font-size: 0.9em;
+    }
+    .action-buttons a {
+        font-size: 0.85em;
+        padding: 4px 8px;
+        margin-right: 5px;
+    }
+    /* The .table-responsive class handles horizontal scrolling */
+}
